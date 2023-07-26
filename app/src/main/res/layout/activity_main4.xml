@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="155dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:paddingStart="20sp"
+        android:paddingTop="12sp"
+        android:text="@string/enter_date"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="155dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:paddingStart="20sp"
+        android:paddingTop="12sp"
+        android:text="@string/enter_subject"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="206dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="4dp"
+        android:hint="@string/your_record"
+        android:paddingStart="40sp"
+        android:paddingTop="15sp"
+        android:textColorHint="#78909C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subspinner"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="155dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="372dp"
+        android:paddingStart="20sp"
+        android:paddingTop="12sp"
+        android:text="@string/status"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView26"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.01"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/button4"
+        style="?android:spinnerStyle"
+        android:layout_width="189dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/select_date"
+        android:onClick="openDatePicker"
+        android:paddingStart="35sp"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+    <Spinner
+        android:id="@+id/subspinner"
+        android:layout_width="189dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/subspinner"
+        android:paddingStart="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="195dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/andika_new_basic"
+        android:text="@string/search_status"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
